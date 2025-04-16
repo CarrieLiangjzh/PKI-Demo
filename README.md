@@ -10,7 +10,7 @@ A Demo for PKI system, can generate self-signed root CA, Intermedia Certificate,
  if ask you enter pass phrase, please enter the password what you like, eg,1234
  make sure to remember it
 
-** 2.Generate the intermiediate certficate**
+**2.Generate the intermiediate certficate**
 
 ```bash
  sudo ./generate_intermediate_ca.sh
