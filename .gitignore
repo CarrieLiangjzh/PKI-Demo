@@ -1,0 +1,60 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build
+build/
+Build/
+build-*/
+build_*
+
+# Bin
+bin/
+Bin/
+
+#Ignore kdev
+*.kdev4
+
+#Ignore Testing
+test/Testing/
+
+# Ignore node modules/package.json for comitizen
+node_modules/*
+package-lock.json
+
+.vscode/tcu-test/
+
+.vscode/tcu-test/
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/setting*
+.vscode/*
