@@ -1,3 +1,5 @@
+intermediate_ca/
+root_ca/
 # Prerequisites
 *.d
 

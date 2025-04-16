@@ -5,7 +5,7 @@
 # Configuration
 INTERMEDIATE_CA_DIR="./intermediate_ca"
 OPENSSL_CONF="./intermediate_openssl.cnf"
-DEFAULT_VALIDITY_DAYS=730 # 2 years
+#DEFAULT_VALIDITY_DAYS=1 # 2 years
 
 # Check arguments
 if [ "$#" -lt 1 ]; then
@@ -16,11 +16,13 @@ if [ "$#" -lt 1 ]; then
 fi
 
 CSR_FILE=$1
-OUTPUT_CERT=${2:-${CSR_FILE%.*}.crt}
+DEFAULT_VALIDITY_DAYS=$2
+OUTPUT_CERT=${CSR_FILE%.*}.crt}
 
 echo "=== Signing Device Certificate ==="
 echo "CSR File: ${CSR_FILE}"
 echo "Output Certificate: ${OUTPUT_CERT}"
+echo "The validity days:${DEFAULT_VALIDITY_DAYS}"
 
 # Verify intermediate CA exists
 if [ ! -f "${INTERMEDIATE_CA_DIR}/private/intermediate.key.pem" ]; then
